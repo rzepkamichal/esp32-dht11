@@ -1,10 +1,15 @@
 #include <Arduino.h>
-#include <HTTPClient.h>
 #include <WiFi.h>
-#include <ctime>
+
+#include <Wire.h>
+
 #include <Adafruit_Sensor.h>
+#include <Adafruit_ADXL343.h>
+#include <DHT.h>
+#include <DHT_U.h>
 
 #include "wifi_conf.h"
+
 
 const char *ssid = WifiConf::SSID;
 const char *password = WifiConf::PASSWORD;
